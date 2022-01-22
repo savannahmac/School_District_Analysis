@@ -1,0 +1,92 @@
+# PyCity School District Analysis
+
+## Overview of the school district analysis: 
+### Project Goals:
+- This data analysis aims to provide a comprehensive look at funding, student performance, and school size for the high schools in the PyCity school district.
+- This analysis aims to assist the school board in comparing the effects of school funding, size, and type on student performance. 
+- This report aims to direct the school board toward trends appearing within the PyCity high schools. 
+
+### Important Steps in the overall Data Analysis: 
+- Cleaning the data: 
+	- Some student names had been entered incorrectly. In order to correct our records, it was necessary to clean this data.
+- Creating data frames: 
+	- Throughout the data analysis, you should see charts called, "data frames." These data frames allow you to see a variety of information about the high schools including:
+		- complete student data
+		- complete school data
+		- a summary of ninth grade performance throughout the district
+		- a comparison of how schools perform based on their funding
+		- and more
+- Merging school and student data: 
+	- For a more complete analysis, it was necessary to merge the school and student data.
+	- This allowed the analysis to examine the qualities of each school that may contribute to student success or failure. 
+
+
+## Results
+Due to the investigation of ninth grade reading and math scores from Thomas High School, this document presents both the original data frames (including Thomas High School ninth grade scores) and the refactored data frames (in which those scores have been excluded).
+
+- How is the district summary affected by the removal of THS reading and math scores?
+	- See the image below for the original district summary: 
+		- Insert file original_district_summary png
+	- Here is the district summary with the THS ninth grade scores removed:
+		- Insert file minusths_district_summary png
+
+	- These images show a slight change in the numbers caused by the removal of the THS reading and math scores.
+		- the Average Reading percentage, the percent of students passing math, the percent of students passing reading, and the overall passing percentage were all raised by nearly one point once the THS scores had been removed. 
+
+- How is the school summary affected?
+
+	- Since only one school was affected by this investigation, the school summary shows very little change from the original version of the code to the modified code.
+	- The only changes can be found in the Thomas High School row, which will be discussed in the next section of the summary. 
+	
+
+- How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+	- Because the numbers for Thomas High School did not change drastically with or without the ninth grade scores, the affect on the overall school summary is minimal.
+		- After the removal of ninth grade numbers, THS remains in the top five schools in the district, and remains the second-highest school in the district when ranked by the overall percentage of students who passed.
+		- However, you can see in these two images that the percentages of students passing math, students passing reading, and overall passing percentage were raised slightly when ninth grade scores were included.
+			- Original Data Analysis for THS:
+				- Insert file original_school_summary
+			- Modified Data Analysis for THS: 
+				- Insert file minusths_school_summary
+
+- How does replacing the ninth-grade scores affect the following:
+	- Math and reading scores by grade
+		- Below you will see the data frames for the original math scores, and the modified math scores, sorted by grade:
+			- Original Math Scores by Grade
+				- Insert Image
+			- Modified Math Scores by Grade
+				- Insert Image
+		- Below you will see the data frames for the original reading scores, and the modified reading scores, sorted by grade:
+			- Original Reading Scores by Grade
+				- Insert Image
+			- Modified Math Scores by Grade
+				- Insert Image
+
+		-In both cases, the other schools were not affected, but you can see where the "NaN" or "N/A" has been put in for the THS ninth grade scores.
+
+	- Scores by school spending
+		- Below you will see the original scores, broken down to their school spending per capita: 
+			- Insert Image
+		- Here is the same break down, with the THS ninth graders removed:
+			- Insert Image 
+
+		- A very minute change can be spotted between these two data frames. With the exclusion of the THS ninth grade data, we can see that their spending level receives slightly different scores.
+			- The percent of students passing math in the original data frame would round to 74%, while in the modified data frame it is only 73%.
+			- Due to the relatively small number of students affected by the grade removal, the data stays virtually the same in each analysis.
+
+	- Scores by school size
+		- Similarly to scores by school spending, the removal of the ninth grade scores from THS has little to no affect on the analysis of student success based on school size.
+		- These are the results showing student success by school size (from the modified version of the analysis):
+			- Insert image
+
+	- Scores by school type
+		- Again, scores by school type were not altered enough to affect the overall data analysis. 
+		- Here are the results showing student success by school type (from the modified version of the analysis):
+			- Insert image
+
+## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+- The primary changes found in the data after the removal of THS ninth grade scores is in THS's own data. 
+- You can see that the removal of ninth grade THS scores affected the average reading score for Thomas High. 
+- Additionally, the percentage of students passing math, passing reading, and passing both math & reading were raised by a percentage point when ninth grade data was removed.
+- Finally, this removal greatly affects our ability to compare student success by grade level. 
+	- Since an entire grade level had to be removed, this makes our analysis by grade level more difficult to process. 
+	- The analysis of success by grade level should be set aside until clearer answers are available on the ninth grade scores from THS. 
